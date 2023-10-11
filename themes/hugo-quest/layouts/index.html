@@ -1,7 +1,8 @@
 {{ define "main" }}
 
 <dir class="container-fluid text-center">
-  <h1> {{ .Site.Title }}</h1>
+  <h1 class="title"> {{ .Site.Title }}</h1>
+  <span>&#9876;</span>
 </dir>
 
 <hr class="main"/>
@@ -19,13 +20,16 @@
 {{ $paginator := .Paginate $pages }} {{ range $index, $page := $paginator.Pages}}
 <!---->
 
+<p>Posts</p>
+
 <dir class="container">
   <div class="row">
-    <div class="col">
+    <div class="col post">
       <a class="" href="{{ .Permalink }}">
         <div class="post-card text-center">
           <h2 class="post-title">{{ .Title }}</h2>
           <time class="post-date">{{ .Date | time.Format ":date_medium" }}</time>
+          <p class="author"> - {{ .Params.author }} </p>
         </div>
       </a>
     </div>
