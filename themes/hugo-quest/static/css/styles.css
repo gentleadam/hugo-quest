@@ -1,0 +1,33 @@
+hr.main {
+    color: black;
+    opacity: 100;
+}
+
+.post-title {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 700;
+}
+
+.post-date {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.post-card {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #0a0a0a;
+    box-shadow: 8px 8px 0 #cccccc;
+}
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+}

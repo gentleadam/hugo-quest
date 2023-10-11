@@ -1,24 +1,36 @@
 {{ define "main" }}
 
-<h1> {{ .Site.Title }}</h1>
+<dir class="container-fluid text-center">
+  <h1> {{ .Site.Title }}</h1>
+</dir>
+
+<hr class="main"/>
 
 <!-- $pages -->
-{{ $pages := union .RegularPages .Sections }}<!---->
-{{ if .IsHome }}<!---->
-{{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}<!---->
+{{ $pages := union .RegularPages .Sections }}
+<!---->
+{{ if .IsHome }}
+<!---->
+{{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+<!---->
 {{ end }}
 
 <!-- Articles -->
-{{ $paginator := .Paginate $pages }} {{ range $index, $page := $paginator.Pages
-}}<!---->
+{{ $paginator := .Paginate $pages }} {{ range $index, $page := $paginator.Pages}}
+<!---->
 
-<section class="">
-  <h2 class="">{{ .Title }}</h2>
-  <time class=""
-    >{{ .Date | time.Format ":date_medium" }}</time
-  >
-  <a class="" href="{{ .Permalink }}">{{ .Title }}</a>
-</section>
+<dir class="container">
+  <div class="row">
+    <div class="col">
+      <a class="" href="{{ .Permalink }}">
+        <div class="post-card text-center">
+          <h2 class="post-title">{{ .Title }}</h2>
+          <time class="post-date">{{ .Date | time.Format ":date_medium" }}</time>
+        </div>
+      </a>
+    </div>
+  </div>
+</dir>
 {{ end }}
 
 {{ end }}
