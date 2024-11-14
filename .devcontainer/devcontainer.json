@@ -1,0 +1,27 @@
+{
+    "name": "Hugo",
+  
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+  
+    // 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
+    // "features": { "ghcr.io/devcontainers/features/docker-in-docker:2": {} },
+  
+    // 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
+    "forwardPorts": [1313],
+  
+    // Configure tool-specific properties.
+    "customizations": {
+      // Configure properties specific to VS Code.
+      "vscode": {
+        // Set *default* container specific settings.json values on container create.
+        "settings": {},
+        // Add the IDs of extensions you want installed when the container is created.
+        "extensions": []
+      }
+    },
+  
+    "remoteUser": "vscode",
+    "onCreateCommand": "git submodule update --init"
+  }
