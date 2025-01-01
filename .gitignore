@@ -17,3 +17,5 @@ config.toml
 hugo
 exampleSite/*
 exampleSite/public/css/main.css
+exampleSite
+exampleSite/public/css/main.css

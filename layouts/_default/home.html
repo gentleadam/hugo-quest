@@ -1,10 +1,10 @@
 {{ define "main" }}
-<main class="container">
+<div class="container">
   <ul class="post-grid">
     {{ range $index, $element := .Site.RegularPages.ByDate.Reverse }}
     <li class="post-card">
       <a href="{{ .Permalink }}">
-          <div class="emoji-box" style="background-color: {{ index (slice "#FDE9F0" "#E6F2FF" "#E0F8E0" "#E6E6FA" "#FFF5E0") (mod $index 5) }}">
+        <div class="emoji-box" style="background-color: {{ index (slice "#ff6464" "#f2d95c" "#6abf7d" "#4d88ff" "#d67ab0") (mod $index 5) }}"> 
           {{ .Params.emoji }}
         </div>
         {{ if .Params.featured_image }}
@@ -24,5 +24,5 @@
     </li>
     {{ end }}
   </ul>
-</main>
+</div>
 {{ end }}

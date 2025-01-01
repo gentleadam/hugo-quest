@@ -1,26 +1,100 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@500&display=swap');
+html {
+  margin: 0px;
+}
+
 body {
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
   font-style: normal;
   background-color: #fff;
   color: #000;
-  max-width: 1000px;
-  margin: 0 auto;
+  font-size: 1.1rem;
+  margin: 0px;
 }
 
 header {
-  margin-bottom: 1rem;
   font-family: "Poppins", serif;
-  color: #ff7575;
+  color: #ff6464;
   font-weight: 500;
   font-style: normal;
+  width: 100%;
+  background-color: #1e2737;
+  display: inline-block;
+}
+
+header h1 {
+  text-align: center;
 }
 
 footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+  background-color: #1e2737; /* Dark blue */
+  color: #fff;
+  padding: 30px 0;
+}
+
+nav {
+  background-color: #1e2737; 
+  color: #fff;
+  padding: 20px 0; 
+}
+nav ul { 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: center; /* Center the links */ 
+  align-items: center; 
+}
+
+nav li { 
+  margin: 0 10px; /* Add margin on both sides */
+}
+
+nav a { 
+  color: #fff; 
+  text-decoration: none;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Arrange links horizontally */
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: #ff6464; /* Red */
+  text-decoration: none;
+}
+
+.footer-copyright {
+  font-size: 0.9em;
+}
+
+/* Optional: Media query for smaller screens */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+  }
+
+  .footer-links ul {
+    margin-top: 20px;
+    justify-content: center; /* Center links */
+  }
 }
 
 a {
@@ -89,3 +163,13 @@ a {
   background-color: #cbcbcb;
 }
 
+.postHeading {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e2737;
+  color: #fff;
+}
+
+.postHeadingEmoji {
+  font-size: 3em; /* Adjust emoji size as needed */
+}

@@ -1,17 +1,27 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-
-{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-{{ $dateHuman := .Date | time.Format ":date_long" }}
-<time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-{{ .Content }}
-{{ if .Params.tags }}
-<div class="tags">
-  <span class="post-tags">
-    {{ range .Params.tags }}
-    <a class="tag" href="{{ (urlize (printf " tags/%s/" .)) | absLangURL }}">#{{ . }}</a>&nbsp;
-    {{ end }}
-  </span>
+<div class="postHeading">
+  <div class="postHeadingEmoji">
+    <span>{{ .Params.emoji }}</span>
+  </div>
+  <h2>{{ .Title }}</h2>
 </div>
-{{ end }}
+
+<div class="container">
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  
+  <p>{{ .ReadingTime }} {{ $.Site.Params.minuteReadingTime | default "min read" }} ({{ .WordCount }} {{ $.Site.Params.words | default "words" }})</p>
+
+  {{ .Content }}
+  {{ if .Params.tags }}
+  <div class="tags">
+    <span class="post-tags">
+      {{ range .Params.tags }}
+      <a class="tag" href="{{ (urlize (printf " tags/%s/" .)) | absLangURL }}">#{{ . }}</a>&nbsp;
+      {{ end }}
+    </span>
+  </div>
+  {{ end }}
+</div>
 {{ end }}
