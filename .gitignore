@@ -1,0 +1,17 @@
+### Hugo ###
+/public/
+resources/_gen/
+.hugo_build/
+
+# Theme specific
+themes/*/exampleSite/
+exampleSite/public/
+
+# Temporary
+hugo.sum
+
+# Configuration
+config.toml
+
+# Binary
+hugo
