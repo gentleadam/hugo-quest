@@ -29,3 +29,11 @@ authors = [
   author = 'Name of original author'
   homepage = 'Website of original author'
   repo = 'https://github.com/owner/repo'
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true 
+    lineNos = true 
+    lineNumbersInTable = true 
+    noClasses = false

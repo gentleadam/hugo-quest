@@ -173,3 +173,116 @@ a {
 .postHeadingEmoji {
   font-size: 3em; /* Adjust emoji size as needed */
 }
+
+.highlight {
+  color: #f8f8f2; /* Off-white for code */
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+
+/* Code block container */
+.highlight pre {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+  background-color: #1e2737 !important; /* Dark blue background */
+}
+
+/* Line numbers */
+.highlight .line-numbers .line-numbers-rows {
+  border-right-color: #282c34; /* Slightly lighter border */
+}
+
+.highlight .line-numbers-rows > span:before {
+  color: #4d5666; /* Light gray for line numbers */
+}
+
+/* Specific language tokens */
+.highlight .token.comment,
+.highlight .token.prolog,
+.highlight .token.doctype,
+.highlight .token.cdata {
+  color: #6272a4; /* Muted blue for comments */
+}
+
+/* Specific language tokens */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6272a4; /* Muted blue for comments */
+}
+
+.token.punctuation {
+  color: #f8f8f2; /* Default color */
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #ff79c6; /* Pinkish for properties, tags, etc. */
+}
+
+.token.boolean,
+.token.number {
+  color: #bd93f9; /* Purple for booleans and numbers */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #f1fa8c; /* Yellow for strings, attributes, etc. */
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #ff6464; /* Red for operators and URLs */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #8be9fd; /* Light blue for keywords and atrules */
+}
+
+.token.function {
+  color: #50fa7b; /* Green for functions */
+}
+
+.token.regex,
+.token.important {
+  color: #ffb86c; /* Orange for regex and important */
+}
+
+.token.variable {
+  color: #f8f8f2; /* Default color */
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
