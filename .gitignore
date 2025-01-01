@@ -5,7 +5,7 @@ resources/_gen/
 
 # Theme specific
 themes/*/exampleSite/
-exampleSite/public/
+/exampleSite/public/
 
 # Temporary
 hugo.sum
@@ -15,3 +15,5 @@ config.toml
 
 # Binary
 hugo
+exampleSite/*
+exampleSite/public/css/main.css
