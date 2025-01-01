@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on The DevOps Quest</title>
-    <link>https://zany-bassoon-7vgq497rwv7cww6v-1313.app.github.dev/tags/</link>
+    <link>https://refactored-space-tribble-q7wrgqv97pr365rr-1313.app.github.dev/tags/</link>
     <description>Recent content in Tags on The DevOps Quest</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
-    <atom:link href="https://zany-bassoon-7vgq497rwv7cww6v-1313.app.github.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://refactored-space-tribble-q7wrgqv97pr365rr-1313.app.github.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blue</title>
-      <link>https://zany-bassoon-7vgq497rwv7cww6v-1313.app.github.dev/tags/blue/</link>
+      <link>https://refactored-space-tribble-q7wrgqv97pr365rr-1313.app.github.dev/tags/blue/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>https://zany-bassoon-7vgq497rwv7cww6v-1313.app.github.dev/tags/blue/</guid>
+      <guid>https://refactored-space-tribble-q7wrgqv97pr365rr-1313.app.github.dev/tags/blue/</guid>
       <description></description>
     </item>
     <item>
       <title>Green</title>
-      <link>https://zany-bassoon-7vgq497rwv7cww6v-1313.app.github.dev/tags/green/</link>
+      <link>https://refactored-space-tribble-q7wrgqv97pr365rr-1313.app.github.dev/tags/green/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>https://zany-bassoon-7vgq497rwv7cww6v-1313.app.github.dev/tags/green/</guid>
+      <guid>https://refactored-space-tribble-q7wrgqv97pr365rr-1313.app.github.dev/tags/green/</guid>
       <description></description>
     </item>
     <item>
       <title>Red</title>
-      <link>https://zany-bassoon-7vgq497rwv7cww6v-1313.app.github.dev/tags/red/</link>
+      <link>https://refactored-space-tribble-q7wrgqv97pr365rr-1313.app.github.dev/tags/red/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>https://zany-bassoon-7vgq497rwv7cww6v-1313.app.github.dev/tags/red/</guid>
+      <guid>https://refactored-space-tribble-q7wrgqv97pr365rr-1313.app.github.dev/tags/red/</guid>
       <description></description>
     </item>
   </channel>

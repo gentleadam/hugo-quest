@@ -1,20 +1,21 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@500&display=swap');
 body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
   font-style: normal;
-  text-align: center;
-  background-color: #161616;
-  color: #bdbdbd;
+  background-color: #fff;
+  color: #000;
   max-width: 1000px;
+  margin: 0 auto;
 }
 
 header {
-  border-bottom: 1px solid #222;
   margin-bottom: 1rem;
-  text-align: center; /* Add this to center the header content */
+  font-family: "Poppins", serif;
+  color: #ff7575;
+  font-weight: 500;
+  font-style: normal;
 }
 
 footer {
@@ -22,59 +23,69 @@ footer {
   margin-top: 1rem;
 }
 
-h1 {
-  font-family: "Marcellus", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #e9ae00;
-  font-size: 3rem;
-}
-
-h2 {
-  font-family: "Marcellus", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #e9ae00;
-}
-
 a {
   text-decoration: none;
 }
 
-nav ul {
+.container {
+  max-width: 960px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  grid-gap: 20px;
   list-style: none;
-  margin: 0;
   padding: 0;
-  display: inline-block; /* This will allow the nav to be centered */ 
 }
 
-nav li {
-  display: inline-block; 
-  margin: 10px 15px; 
+.post-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-nav a {
-  color: #e9ae00; 
+.post-card a {
   text-decoration: none;
-  font-family: 'Marcellus', serif; 
-  font-size: 1.2em; 
-  position: relative; 
-  transition: all 0.3s ease-in-out; 
+  color: inherit;
 }
 
-nav a::before { 
-  content: "";
-  position: absolute;
-  bottom: -5px; 
-  left: 0;
+.post-card img {
   width: 100%;
-  height: 3px; 
-  background-color: #e9ae00; 
-  transform: scaleX(0); 
-  transition: transform 0.3s ease-in-out; 
+  height: 200px; /* Adjust as needed */
+  object-fit: cover;
 }
 
-nav a:hover::before {
-  transform: scaleX(1); 
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #e7e7e7;
+  color: #333;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+
+.emoji-box {
+  font-size: 3em; /* Adjust emoji size as needed */
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee; /* Add a subtle border */
+  background-color: #cbcbcb;
 }
 
