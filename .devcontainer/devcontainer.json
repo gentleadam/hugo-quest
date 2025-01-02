@@ -19,6 +19,15 @@
         "settings": {},
         // Add the IDs of extensions you want installed when the container is created.
         "extensions": []
+      },
+        "codespaces": {
+        "repositories": {
+          "gentleadam/hugo-quest": {
+            "permissions": {
+              "issues": "write-all"
+            }
+          }
+        }
       }
     },
   
