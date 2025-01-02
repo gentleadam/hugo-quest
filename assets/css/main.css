@@ -26,6 +26,16 @@ header {
 
 header h1 {
   text-align: center;
+  text-decoration: none;
+}
+
+header h1 a {
+  color: #ff6464;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 footer {
@@ -95,10 +105,6 @@ nav a {
     margin-top: 20px;
     justify-content: center; /* Center links */
   }
-}
-
-a {
-  text-decoration: none;
 }
 
 .container {
