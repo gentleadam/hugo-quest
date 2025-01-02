@@ -107,6 +107,12 @@ a {
   padding: 20px;
 }
 
+.container img {
+  max-width: 70%;
+  display: block;
+  margin: auto;
+}
+
 .post-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
