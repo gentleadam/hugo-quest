@@ -9,9 +9,9 @@
 <div class="container">
   {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
   {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <p>📅<time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></p>
+  <p>📅 <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></p>
   
-  <p>⏱️{{ .ReadingTime }} {{ $.Site.Params.minuteReadingTime | default "min read" }} ({{ .WordCount }} {{ $.Site.Params.words | default "words" }})</p>
+  <p>⏱️ {{ .ReadingTime }} {{ $.Site.Params.minuteReadingTime | default "min read" }} ({{ .WordCount }} {{ $.Site.Params.words | default "words" }})</p>
 
   {{ .Content }}
   {{ if .Params.tags }}
