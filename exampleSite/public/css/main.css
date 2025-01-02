@@ -1,0 +1,175 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@500&display=swap');
+html {
+  margin: 0px;
+}
+
+body {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.1rem;
+  margin: 0px;
+}
+
+header {
+  font-family: "Poppins", serif;
+  color: #ff6464;
+  font-weight: 500;
+  font-style: normal;
+  width: 100%;
+  background-color: #1e2737;
+  display: inline-block;
+}
+
+header h1 {
+  text-align: center;
+}
+
+footer {
+  background-color: #1e2737; /* Dark blue */
+  color: #fff;
+  padding: 30px 0;
+}
+
+nav {
+  background-color: #1e2737; 
+  color: #fff;
+  padding: 20px 0; 
+}
+nav ul { 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: center; /* Center the links */ 
+  align-items: center; 
+}
+
+nav li { 
+  margin: 0 10px; /* Add margin on both sides */
+}
+
+nav a { 
+  color: #fff; 
+  text-decoration: none;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Arrange links horizontally */
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: #ff6464; /* Red */
+  text-decoration: none;
+}
+
+.footer-copyright {
+  font-size: 0.9em;
+}
+
+/* Optional: Media query for smaller screens */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+  }
+
+  .footer-links ul {
+    margin-top: 20px;
+    justify-content: center; /* Center links */
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 960px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  grid-gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.post-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.post-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-card img {
+  width: 100%;
+  height: 200px; /* Adjust as needed */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #e7e7e7;
+  color: #333;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+
+.emoji-box {
+  font-size: 3em; /* Adjust emoji size as needed */
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee; /* Add a subtle border */
+  background-color: #cbcbcb;
+}
+
+.postHeading {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e2737;
+  color: #fff;
+}
+
+.postHeadingEmoji {
+  font-size: 3em; /* Adjust emoji size as needed */
+}

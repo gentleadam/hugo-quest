@@ -1,0 +1,301 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@500&display=swap');
+html {
+  margin: 0px;
+}
+
+body {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.1rem;
+  margin: 0px;
+}
+
+header {
+  font-family: "Poppins", serif;
+  color: #ff6464;
+  font-weight: 500;
+  font-style: normal;
+  width: 100%;
+  background-color: #1e2737;
+  display: inline-block;
+}
+
+header h1 {
+  text-align: center;
+  text-decoration: none;
+}
+
+header h1 a {
+  color: #ff6464;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #1e2737; /* Dark blue */
+  color: #fff;
+  padding: 30px 0;
+}
+
+nav {
+  background-color: #1e2737; 
+  color: #fff;
+  padding: 20px 0; 
+}
+nav ul { 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: center; /* Center the links */ 
+  align-items: center; 
+}
+
+nav li { 
+  margin: 0 10px; /* Add margin on both sides */
+}
+
+nav a { 
+  color: #fff; 
+  text-decoration: none;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Arrange links horizontally */
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: #ff6464; /* Red */
+  text-decoration: none;
+}
+
+.footer-copyright {
+  font-size: 0.9em;
+}
+
+/* Optional: Media query for smaller screens */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+  }
+
+  .footer-links ul {
+    margin-top: 20px;
+    justify-content: center; /* Center links */
+  }
+}
+
+.container {
+  max-width: 960px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container img {
+  max-width: 70%;
+  display: block;
+  margin: auto;
+  padding: 15px 0px;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  grid-gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.post-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.post-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-card img {
+  width: 100%;
+  height: 200px; /* Adjust as needed */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #e7e7e7;
+  color: #333;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+
+.emoji-box {
+  font-size: 3em; /* Adjust emoji size as needed */
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee; /* Add a subtle border */
+  background-color: #cbcbcb;
+}
+
+.postHeading {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e2737;
+  color: #fff;
+}
+
+.postHeadingEmoji {
+  font-size: 3em; /* Adjust emoji size as needed */
+}
+
+.highlight {
+  color: #f8f8f2; /* Off-white for code */
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+
+/* Code block container */
+.highlight pre {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+  background-color: #1e2737 !important; /* Dark blue background */
+}
+
+/* Line numbers */
+.highlight .line-numbers .line-numbers-rows {
+  border-right-color: #282c34; /* Slightly lighter border */
+}
+
+.highlight .line-numbers-rows > span:before {
+  color: #4d5666; /* Light gray for line numbers */
+}
+
+/* Specific language tokens */
+.highlight .token.comment,
+.highlight .token.prolog,
+.highlight .token.doctype,
+.highlight .token.cdata {
+  color: #6272a4; /* Muted blue for comments */
+}
+
+/* Specific language tokens */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6272a4; /* Muted blue for comments */
+}
+
+.token.punctuation {
+  color: #f8f8f2; /* Default color */
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #ff79c6; /* Pinkish for properties, tags, etc. */
+}
+
+.token.boolean,
+.token.number {
+  color: #bd93f9; /* Purple for booleans and numbers */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #f1fa8c; /* Yellow for strings, attributes, etc. */
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #ff6464; /* Red for operators and URLs */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #8be9fd; /* Light blue for keywords and atrules */
+}
+
+.token.function {
+  color: #50fa7b; /* Green for functions */
+}
+
+.token.regex,
+.token.important {
+  color: #ffb86c; /* Orange for regex and important */
+}
+
+.token.variable {
+  color: #f8f8f2; /* Default color */
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}

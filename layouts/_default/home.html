@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="container">
+  <ul class="post-grid">
+    {{ range $index, $element := .Site.RegularPages.ByDate.Reverse }}
+    <li class="post-card">
+      <a href="{{ .Permalink }}">
+        <div class="emoji-box" style="background-color: {{ index (slice "#ff6464" "#f2d95c" "#6abf7d" "#4d88ff" "#d67ab0") (mod $index 5) }}"> 
+          {{ .Params.emoji }}
+        </div>
+        {{ if .Params.featured_image }}
+        <img src="{{ .Params.featured_image }}" alt="{{ .Title }}">
+        {{ end }}
+        <div class="card-content">
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Date.Format "2 Jan 2006" }}</p>
+          <p>{{ .Description }}</p>
+          <div class="tags">
+            {{ range .Params.tags }}
+            <span class="tag">#{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
