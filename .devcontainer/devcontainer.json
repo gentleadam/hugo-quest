@@ -22,7 +22,7 @@
       },
         "codespaces": {
         "repositories": {
-          "gentleadam/hugo-quest": {
+          "gentleadam/thedevopsquest": {
             "permissions": {
               "issues": "write-all"
             }
