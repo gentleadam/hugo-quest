@@ -67,6 +67,26 @@ nav a {
   text-decoration: none;
 }
 
+hr {
+  height: 2px;
+  width: 80%;
+  border-width: 0px;
+  background-color:#1e273729;
+}
+
+#home-content-container {
+  text-align: center;
+}
+
+#home-content-container h3{
+  font-family: "Poppins", serif;
+  color: #ff6464;
+}
+
+#home-content-container svg{
+  padding: 10px;
+}
+
 .footer-content {
   display: flex;
   justify-content: space-between;
